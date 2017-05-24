@@ -63,9 +63,15 @@ function sheets() {
 }
 
 function SHEETNAME() {
-  var ss = SpreadsheetApp.getActiveSpreadsheet();
-  var s = ss.getActiveRange().getSheet();
-  return s.getName();
+  try {
+  	var ss = SpreadsheetApp.getActiveSpreadsheet();
+  	var s = ss.getActiveRange().getSheet();
+  	return s.getName();
+  } catch(e) {
+	Logger.log("Pole avada sheeti");
+   // if the script code throws an error,
+   // do something with the error here
+  }
 }
 
 function onChange(e) {
