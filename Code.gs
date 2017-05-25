@@ -69,7 +69,7 @@ function SHEETNAME() {
   	return s.getName();
   } catch(e) {
 	Logger.log("Pole avada sheeti");
-   // if the script code throws an error,
+   // if the script throws an error,
    // do something with the error here
   }
 }
