@@ -9,7 +9,7 @@ function onOpen(e) {
   var id_failil = fail.getId();
   var name_failil = fail.getName();
   
-  var id_kaust = name_failil.split(" ").splice(-1)[0]
+  var id_kaust = name_failil.split(" ")[0];
   Logger.log(id_kaust);
   
   var target_f = DriveApp.getFoldersByName(id_kaust);
